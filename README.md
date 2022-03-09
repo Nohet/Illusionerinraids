@@ -1,6 +1,9 @@
 **Simple plugin to add illussioner to raids.**
 
 
+Illusionerinraids on spigot: [click](https://www.spigotmc.org/resources/illusionerinraids.100580/)
+
+
 **--------------------------------------------------------**
 
 

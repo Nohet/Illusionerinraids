@@ -1,0 +1,6 @@
+name: Illusionerinraids
+version: '${project.version}'
+main: me.nohet.illusionerinraids.Main
+api-version: 1.18
+authors: [ Nohet ]
+description: Simple plugin to add ilussioner to raids.

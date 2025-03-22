@@ -1,6 +1,8 @@
 package me.nohet.illusionerinraids;
 
 import org.bukkit.Bukkit;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -8,6 +10,11 @@ import java.util.logging.Logger;
 
 
 public final class Main extends JavaPlugin {
+    private static Main instance;
+
+    public static Main getInstance() {
+        return instance;
+    }
 
     @Override
     public void onEnable() {
@@ -28,6 +35,9 @@ public final class Main extends JavaPlugin {
                                                                                            \s
                 """.indent(1));
         log.info("Plugin has been enabled!");
+
+        instance = this;
+        this.saveDefaultConfig();
     }
 
     @Override
